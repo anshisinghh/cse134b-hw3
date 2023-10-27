@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Anshi Singh's personal portfolio website.">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#top"></a>
+            <h1>Anshi Singh</h1>
+            <nav>
+                <ul>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experiments">Experiments</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>About Me</h2>
+            <details>
+                <summary><code>print("Hello!")</code></summary>
+                If this is your first time here, please read and share!
+            </details>
+            <p>My name is <span class="highlight">Anshi</span>. I am a <i>Computer Science</i> student at UC San Diego, with an expected graduation date of <b>June 2025</b>. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have <em>industry level internship experience</em> as a student consultant who worked on a project on blockchain technology. <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
+            <figure>
+                <img src="headshot.png" alt="Anshi's Headshot" width="200">
+                <figcaption>Fig 1. This is my headshot.</figcaption>
+            </figure>
+            <aside>
+                <p>Want to learn more about my college, UCSD?</p>
+                <picture>
+                    <source srcset="library.jpeg" type="image/jpeg" width="500">
+                    <source srcset="library2.jpg" type="image/jpg" width="500">
+                    <img src="library3.png" alt="Giesel Library" width="500">
+                </picture>
+                <br>
+                <iframe src="https://ucsd.edu/" title="UCSD's Website" width="500" height=500></iframe>
+            </aside>
+            <h2>Contact Info</h2>
+            <ul>
+                <li>Email: <a href="mailto:anshisingh730@gmail.com">anshisingh730@gmail.com</a></li>
+                <li>Phone: +1 (949) 353-4274</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/anshisingh/">linkedin.com/in/anshisingh</a></li>
+                <li>GitHub: <a href="https://github.com/anshisinghh">github.com/anshisinghh</a></li>
+            </ul>
+            <form>
+                <fieldset>
+                    <legend>Connect with me!</legend>
+                    <label>Select your level:</label>
+                    <input type="radio" id="student" name="level">
+                    <label for="student">Student</label>
+                    <input type="radio" id="recruiter" name="level">
+                    <label for="recruiter">Recruiter</label>
+                    <input type="radio" id="industry" name="level">
+                    <label for="industry">Industry</label>
+                    <br>
+                    <label for="location">Select your location:</label>
+                    <select id="location">
+                        <optgroup label="California">
+                            <option value="norcal">North California</option>
+                            <option value="socal">Southern California</option>
+                            <option value="central">Central Valley</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="east">East Coast</option>
+                            <option value="midwest">Midwest</option>
+                            <option value="southern">Southern US</option>
+                            <option value="international">International</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="field">Select your field:</label>
+                    <datalist id="fieldOptions">
+                        <option value="Backend"></option>
+                        <option value="Frontend"></option>
+                        <option value="Fullstack"></option>
+                        <option value="IT"></option>
+                        <option value="Development"></option>
+                        <option value="Product Management"></option>
+                    </datalist>
+                    <input list="fieldOptions" id="field">
+                    <br>
+                    <label for="information">Add your details:</label>
+                    <textarea id="information">Your details here...</textarea>
+                    <br>
+                    <button type="submit">Save</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <p>Made with &hearts; by Anshi</p>
+        </footer>
+    </body>
+</html>

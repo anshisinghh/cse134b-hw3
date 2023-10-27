@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Anshi Singh's personal portfolio website.">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#top"></a>
+            <h1>Anshi Singh</h1>
+            <nav>
+                <ul>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experiments">Experiments</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Experiments</h2>
+            <pre>
+                def greet():
+                    print("Hello, World!")
+            </pre>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mp3">
+            </audio>
+            <br>
+            <video controls>
+                <source src="sample-video.mp4" type="video/mp4">
+            </video>
+            <div class="drawing">
+                <script>
+                    window.addEventListener('load', function() {
+                        let canvas = document.getElementById('canvas');
+                        let context = canvas.getContext('2d');
+                        context.beginPath();
+                        context.moveTo(10, 50);
+                        context.lineTo(300, 200); 
+                        context.strokeStyle = 'green';
+                        context.lineWidth = 10; 
+                        context.stroke(); 
+                        context.beginPath();
+                        context.arc(300, 150, 50, 0, Math.PI * 2, true);
+                        context.strokeStyle = 'blue';
+                        context.lineWidth = 3;
+                        context.fillStyle = 'rgba(255,165,30,0.4)'
+                        context.fill();
+                        context.stroke();
+                    });
+                </script>
+                <canvas id="canvas" width="400" height="400" >
+                    <p>Canvas Supporting Browser Required</p> 
+                </canvas>
+                <svg height="100" width= "100%">
+                    <circle cx="50" cy="50" r="25" fill="red" stroke="purple" stroke-width="2"/>
+                </svg>
+            </div>
+            <p>This is content before the template.</p>
+            <template>
+                <p>BOO!</p>
+            </template>
+            <p>This is content after the template.</p>
+            <p>Extra Credit</p>
+            <ol>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>E</mi>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <msup>
+                            <mi>c</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </math>
+                </li>
+                <li>MathML could not be used by developers because it was not supported by browser vendors both on the spec and implementation level. MathML Core is a subset and has increased implementation details from LaTeX and Open Font Format, as a result, it can now be used on browsers and works with web client languages.</li>  
+                <li>Meta description tag implemented above, search engines show the description in search results.</li>
+            </ol>
+            <a href="#top">Back to Top</a>
+        </main>
+        <footer>
+            <hr>
+            <p>Made with &hearts; by Anshi</p>
+        </footer>
+    </body>
+</html>
