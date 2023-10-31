@@ -1,19 +1,58 @@
 body {
-    background-color: lightpink;
+    background-color: #dad7cd;
 }
 
-p {
+h1 {
+    background-color: #344e41;
+    color: white
+}
+
+main {
+    background-color: #588157;
+    color: white
+}
+
+/* html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, em, img, small, strong, ol, ul, li, fieldset, form, label, legend, button, article, aside, embed, footer, header, hgroup, nav {
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+} */
+
+/* h1 {
+    color: #344e41;
+}
+
+h2 {
+    color: #3a5a40;
+}
+
+h3 {
+    color: #588157;
+}
+
+h4 {
+    color: #4f772d
+}
+
+p, ul, ol, summary, form {
+    color: #90a955;
+} */
+
+/* p {
     font-size: 1.2 rem;
     color: darkblue;
-}
+} */
 
-p:hover {
+/* p:hover {
     background-color: lightgreen;
 }
 
 .highlight {
     color: red;
-}
+} */
 
 
 /* order of the properties matter in case you have conflicting properties */
