@@ -4,80 +4,150 @@ body {
     background-color : #dad7cd;
 	color : black;
 	font-size : 1.25em;
-}
-
-h1 {
-    padding: 1em;
-    text-align: center;
-	color : rgb(255, 255, 255);
-	font-size : 2em;
-	margin-bottom: 0.5em;
-    background-color: rgb(11, 54, 11);
-}
-
-h2 {
-    clear: both;
-	/* color : #747674;
-	font-size : 1.5em;
-	font-style : italic;
-	margin-top : .5em; */
-}
-
-h3 {
-
-}
-
-p {
-	/* line-height : 1.5; */
-	/* width : 70ch; */
-	/* text-align : justify; */
+    margin: 0;
+    padding: 0;
 }
 
 footer {
     clear: both;
+    background-color: rgb(11, 54, 11); 
+    color : #dad7cd;
+    padding: 0.5em;
+    /* margin-top: 0; */
+}
+footer p {
+    margin-left: 2em;
 }
 
-.top {
-    clear: both;
+/* Header & Navigation Bar */
+header {
+    background-color: rgb(11, 54, 11); 
+    color: rgb(255, 255, 255); 
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-/* Navigation Bar */
-nav {
-    background-color: #333;
-    font-size: 1em; 
+h1 {
+    margin-left: 2em;
 }
 nav ul {
-    list-style-type: none; 
-    display: flex; 
-    justify-content: space-around; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline; 
+    margin-right: 4em;
 }
 nav a {
     text-decoration: none;
     color: white;
-    padding: 15px 20px;
-    display: block;
 }
 nav a:hover {
-	text-decoration : underline;
-} 
+    text-decoration: underline;
+}
+
+/* About Me */
+#aboutme {
+    background-color: black;
+    color: rgb(221, 221, 221);
+    padding: 0.5em;
+}
+#aboutme h2 {
+    margin-left: 30vh;
+}
+#aboutme p {
+    margin-left: 30vh;
+}
+#aboutme img {
+    margin-top: 5vh;
+    margin-right: 30vh;
+}
+
+/* Contact */
+.contact-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+.contact-button {
+    padding: 0.5em;
+    background-color: #5e8b62;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10%;
+    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+/* Get In Touch */
+#getintouch h2 {
+    text-align: center;
+}
+#getintouch form {
+    width: 66%;
+    margin: 0 auto;
+}
+#getintouch input, textarea {
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 0.5em;
+	border: 1px solid black;
+}
+#getintouch input {
+    height: 2em;
+}
+#getintouch textarea {
+	height: 4em;
+}
+#getintouch button {
+	width: 10%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+	height: 2em;
+	background: #5e8b62;
+	color: #fff;
+	border: 1px solid black;
+    transition: background-color 0.3s ease;
+}
+#getintouch button:hover {
+    background-color: #0056b3;
+}
 
 /* Right Aligning Image */
 .right-float {
     float: right;
-    margin-right: 1em;
     margin-left: 1em;
-    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+.right-float img {
+    /* try and make image scalable */
+    max-width: 10em;
+    height: auto;
+}
+#contact {
+    clear: both;
 }
 
 /* Experience */
-.experiences-container {
-
-}
+.experiences-container {}
 .experience {
     padding: 0.5em;
-    background-color: rgb(122, 160, 132);
-    margin: 0.5em;
+    background-color: black;
+    color: white;
+    /* margin: 0.5em; */
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* Project */
@@ -87,9 +157,10 @@ nav a:hover {
 .project {
     padding: 0.5em;
     flex: 1;
-    background-color: rgb(122, 160, 132);
+    background-color: rgb(0, 0, 0);
     margin: 0.5em;
-    border: 0.25em solid black;
+    border: 1px solid white;
+    color: white;
 }
 .center-video {
     display: block;
@@ -98,11 +169,10 @@ nav a:hover {
 }
 
 /* Certification */
-.certifications-container {
-
-}
+.certifications-container {}
 .certification {
     padding: 0.5em;
-    background-color: rgb(122, 160, 132);
+    background-color: black;
     margin: 0.5em;
+    color: white;
 }
