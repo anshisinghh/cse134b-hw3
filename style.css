@@ -1,101 +1,108 @@
+@import url(vars.css);
+
 body {
-    background-color: #dad7cd;
+    background-color : #dad7cd;
+	color : black;
+	font-size : 1.25em;
 }
 
-/* h1 {
-    background-color: #344e41;
-    color: white
-} */
-
-/* main {
-    background-color: #588157;
-    color: white
-} */
-
-/* html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, em, img, small, strong, ol, ul, li, fieldset, form, label, legend, button, article, aside, embed, footer, header, hgroup, nav {
-    margin: 0;
-    padding: 0;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-} */
-
-/* h1 {
-    color: #344e41;
+h1 {
+    padding: 1em;
+    text-align: center;
+	color : rgb(255, 255, 255);
+	font-size : 2em;
+	margin-bottom: 0.5em;
+    background-color: rgb(11, 54, 11);
 }
 
 h2 {
-    color: #3a5a40;
+    clear: both;
+	/* color : #747674;
+	font-size : 1.5em;
+	font-style : italic;
+	margin-top : .5em; */
 }
 
 h3 {
-    color: #588157;
+
 }
 
-h4 {
-    color: #4f772d
+p {
+	/* line-height : 1.5; */
+	/* width : 70ch; */
+	/* text-align : justify; */
 }
 
-p, ul, ol, summary, form {
-    color: #90a955;
-} */
-
-/* p {
-    font-size: 1.2 rem;
-    color: darkblue;
-} */
-
-/* p:hover {
-    background-color: lightgreen;
+footer {
+    clear: both;
 }
 
-.highlight {
-    color: red;
-} */
+.top {
+    clear: both;
+}
 
-
-/* order of the properties matter in case you have conflicting properties */
-
-/* take all the article tags that have a parent, p
-article p {
-    color: green
-} */
-
-/* all the p tags which have the immediate parent as article tag
-article > p {
-    color: green
-} */
-
-
-/* * {
-    font-family: Arial;
-} */
-
-/* if you want something to have css properties with id of fourth and class gray
-#fourth, .gray {
-    color: blue 
-} */
-
-/* margin order is top, right, bottom, left */
-
-/* p {
-    font-size: 1.2rem;
-    color: darkgreen;
-
-    &:hover {
-        background-color: lightgreen;
-    }
-} */
-
-/* all h2 tags next to h1 tags
-h1 + h2 {
-    color: blue;
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    font-size: 1em; 
+}
+nav ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 0; 
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+}
+nav a:hover {
+	text-decoration : underline;
 } 
-h1:has(+ h2) {
-    color: blue
-} */
 
-/* article:has(ul) {
-    color: purple;
-} */
+/* Right Aligning Image */
+.right-float {
+    float: right;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+/* Experience */
+.experiences-container {
+
+}
+.experience {
+    padding: 0.5em;
+    background-color: rgb(122, 160, 132);
+    margin: 0.5em;
+}
+
+/* Project */
+.projects-container {
+    display: flex;
+}
+.project {
+    padding: 0.5em;
+    flex: 1;
+    background-color: rgb(122, 160, 132);
+    margin: 0.5em;
+    border: 0.25em solid black;
+}
+.center-video {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Certification */
+.certifications-container {
+
+}
+.certification {
+    padding: 0.5em;
+    background-color: rgb(122, 160, 132);
+    margin: 0.5em;
+}

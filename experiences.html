@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Personal Portfolio</title>
         <meta charset="UTF-8">
         <meta name="description" content="This is Anshi Singh's personal portfolio website.">
+        <title>Personal Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" type="text/css">
     </head>
     <body>
@@ -12,8 +12,7 @@
             <h1>Anshi Singh</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="index.html">About Me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="experiences.html">Experiences</a></li>
                     <li><a href="skills.html">Skills</a></li>
@@ -22,65 +21,72 @@
             </nav>
         </header>
         <main>
-            <h2>Experiences</h2>
-            <h3>Work Experience</h3>
-            <article class="experience1">
-                <h4>Open Avenues, Orb Labs</h4>
-                <p>Student Consultant, Software Development</p>
-                <p>Internship</p>
-                <p>June 2023 - August 2023</p>
-                <ul>
-                    <li>Designed and implemented a robust backend system for tracking and evaluating transactions on EVM-based blockchains, to provide crucial information on the best time for bridging USDC tokens from Ethereum using Stargate. </li>
-                    <li>Utilized TypeScript and web3 libraries to interface with Ethereum blockchain.</li>
-                    <li>Employed PostgreSQL, TypeORM, and migrations for efficient data storage and version-controlled schema management.</li>
-                    <li>Leveraged external APIs, including Alchemy, for querying data from various blockchain networks.</li>
-                    <li>Successfully implemented listeners to monitor blockchain events, extracting and parsing data to use for calculating and normalizing transaction costs and related metrics.</li>
-                </ul>
-            </article>
-            <article class="experience2">
-                <h4>University of California, Merced</h4>
-                <p>Undergraduate CSE Tutor</p>
-                <p>Part-Time</p>
-                <p>August 2022 - May 2023</p>
-                <ul>
-                    <li>Provided one-on-one tutoring to undergraduate students in Python and C++ concepts.</li>
-                    <li>Assisted students in debugging code and identifying logical errors, enhancing their ability to troubleshoot and resolve programming issues.</li>
-                    <li>Facilitated learning by teaching complex algorithms and problem-solving techniques.</li>
-                </ul>
-            </article>
-            <h3>Projects</h3>
-            <article class="project1">
-                <h4>Twitter, Parstagram, and Flix App</h4>
-                <ul>
-                    <li>Utilized Swift along with various public APIs (including Twitter API, TMDB API, and a Parse Server on Back4app) to develop three distinct apps resembling Twitter, Instagram, and a movie browsing platform.</li>
-                    <li>Implemented functionalities such as retweeting, posting tweets/pictures, multi-displays, and user login functionality.</li>
-                </ul>
-            </article>
-            <article class="project2">
-                <h4>Would You Rather - Social Media App</h4>
-                <ul>
-                    <li>Used Swift to develop an original app where users can create and interact with would you rather questions.</li>
-                    <li>Leveraged a Parse Server on Back4App to efficiently store and retrieve user-generated questions and interactions.</li>
-                    <li>Utilized Figma to create front-end designs, including wireframes and the app logo, enhancing overall user experience.</li>
-                    <li>Employed Git for project management to delegate tasks, create plans and frameworks - ensuring efficient collaboration.</li>
-                </ul>
-            </article>
-            <article class="project3">
-                <h4>Car Search App</h4>
-                <ul>
-                    <li>Collaborated in a hackathon to develop a program that matches user requirements with the best available car for sale.</li>
-                    <li>Utilized the vehicle listings API by AutoDev to effectively design and enhance the process.</li>
-                </ul>
-            </article>
-            <h3>Certifications</h3>
-            <article class="certification1">
-                <h4>iOS Mobile Development Course</h4>
-                <p>CodePath Certification</p>
-                <p>Fall 2022</p>
-                <ul>
-                    <li>Completed a comprehensive project-based course on mobile app development, using Swift, focusing on the implementation of API clients.</li>
-                </ul>
-            </article>
+            <h2>Work Experiences</h2>
+            <section class="experiences-container">
+                <article class="experience">
+                    <h4>Open Avenues, Orb Labs</h4>
+                    <p class="position">Internship</p>
+                    <p class="role">Student Consultant, Software Development</p>
+                    <p class="dates">June 2023 - August 2023</p>
+                    <ul>
+                        <li>Designed and implemented a robust backend system for tracking and evaluating transactions on EVM-based blockchains, to provide crucial information on the best time for bridging USDC tokens from Ethereum using Stargate. </li>
+                        <li>Utilized TypeScript and web3 libraries to interface with Ethereum blockchain.</li>
+                        <li>Employed PostgreSQL, TypeORM, and migrations for efficient data storage and version-controlled schema management.</li>
+                        <li>Leveraged external APIs, including Alchemy, for querying data from various blockchain networks.</li>
+                        <li>Successfully implemented listeners to monitor blockchain events, extracting and parsing data to use for calculating and normalizing transaction costs and related metrics.</li>
+                    </ul>
+                </article>
+                <article class="experience">
+                    <h4>University of California, Merced</h4>
+                    <p class="position">Part-Time</p>
+                    <p class="role">Undergraduate CSE Tutor</p>
+                    <p class="dates">August 2022 - May 2023</p>
+                    <ul>
+                        <li>Provided one-on-one tutoring to undergraduate students in Python and C++ concepts.</li>
+                        <li>Assisted students in debugging code and identifying logical errors, enhancing their ability to troubleshoot and resolve programming issues.</li>
+                        <li>Facilitated learning by teaching complex algorithms and problem-solving techniques.</li>
+                    </ul>
+                </article>
+            </section>
+            <h2>Projects</h2>
+            <section class="projects-container">
+                <article class="project">
+                    <h4>Twitter, Parstagram, and Flix App</h4>
+                    <ul>
+                        <li>Utilized Swift along with various public APIs (including Twitter API, TMDB API, and a Parse Server on Back4app) to develop three distinct apps resembling Twitter, Instagram, and a movie browsing platform.</li>
+                        <li>Implemented functionalities such as retweeting, posting tweets/pictures, multi-displays, and user login functionality.</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <h4>Would You Rather - Social Media App</h4>
+                    <ul>
+                        <li>Used Swift to develop an original app where users can create and interact with would you rather questions.</li>
+                        <li>Leveraged a Parse Server on Back4App to efficiently store and retrieve user-generated questions and interactions.</li>
+                        <li>Utilized Figma to create front-end designs, including wireframes and the app logo, enhancing overall user experience.</li>
+                        <li>Employed Git for project management to delegate tasks, create plans and frameworks - ensuring efficient collaboration.</li>
+                    </ul>
+                    <iframe class="center-video" height="315" src="https://www.youtube.com/embed/h9dNF2-z7DE?si=RH9ySSLfdb-t_yGC" title="App Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+                <article class="project">
+                    <h4>Car Search App</h4>
+                    <ul>
+                        <li>Collaborated in a hackathon to develop a program that matches user requirements with the best available car for sale.</li>
+                        <li>Utilized the vehicle listings API by AutoDev to effectively design and enhance the process.</li>
+                    </ul>
+                    <iframe class="center-video" height="315" src="https://www.youtube.com/embed/UWfbDvBuqMw?si=3OzedNz3WswOuBPV" title="App Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+            </section>
+            <h2>Certifications</h2>
+            <section class="certifications-container">
+                <article class="certification">
+                    <h4>iOS Mobile Development Course</h4>
+                    <p class="institution">CodePath Certification</p>
+                    <p class="dates">Fall 2022</p>
+                    <ul>
+                        <li>Completed a comprehensive project-based course on mobile app development, using Swift, focusing on the implementation of API clients.</li>
+                    </ul>
+                </article>
+            </section>
             <a href="#top">Back to Top</a>
         </main>
         <footer>

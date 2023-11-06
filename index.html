@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Personal Portfolio</title>
         <meta charset="UTF-8">
         <meta name="description" content="This is Anshi Singh's personal portfolio website.">
+        <title>Personal Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" type="text/css">
     </head>
     <body>
@@ -12,8 +12,7 @@
             <h1>Anshi Singh</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="index.html">About Me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="experiences.html">Experiences</a></li>
                     <li><a href="skills.html">Skills</a></li>
@@ -22,10 +21,63 @@
             </nav>
         </header>
         <main>
-            <details>
-                <summary><code>print("Hello!")</code></summary>
-                If this is your first time here, please read and share!
-            </details>
+            <h2>About Me</h2>
+            <picture class="right-float">
+                <img src="headshot.png" alt="Anshi's Headshot" width="200">
+            </picture>
+            <p>Hi, my name is Anshi! I am a Computer Science student at UC San Diego, with an expected graduation date of June 2025. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have industry level internship experience as a student consultant who worked on a project on blockchain technology. <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
+            <p>I am sharing my educational and programming journey!</p>
+            <h2>Contact Info</h2>
+            <ul>
+                <li>Email: <a href="mailto:anshisingh730@gmail.com">anshisingh730@gmail.com</a></li>
+                <li>Phone: +1 (949) 353-4274</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/anshisingh/">linkedin.com/in/anshisingh</a></li>
+                <li>GitHub: <a href="https://github.com/anshisinghh">github.com/anshisinghh</a></li>
+            </ul>
+            <form>
+                <fieldset>
+                    <legend>Connect with me!</legend>
+                    <label>Select your level:</label>
+                    <input type="radio" id="student" name="level">
+                    <label for="student">Student</label>
+                    <input type="radio" id="recruiter" name="level">
+                    <label for="recruiter">Recruiter</label>
+                    <input type="radio" id="industry" name="level">
+                    <label for="industry">Industry</label>
+                    <br>
+                    <label for="location">Select your location:</label>
+                    <select id="location">
+                        <optgroup label="California">
+                            <option value="norcal">North California</option>
+                            <option value="socal">Southern California</option>
+                            <option value="central">Central Valley</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="east">East Coast</option>
+                            <option value="midwest">Midwest</option>
+                            <option value="southern">Southern US</option>
+                            <option value="international">International</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="field">Select your field:</label>
+                    <datalist id="fieldOptions">
+                        <option value="Backend"></option>
+                        <option value="Frontend"></option>
+                        <option value="Fullstack"></option>
+                        <option value="IT"></option>
+                        <option value="Development"></option>
+                        <option value="Product Management"></option>
+                    </datalist>
+                    <input list="fieldOptions" id="field">
+                    <br>
+                    <label for="information">Add your details:</label>
+                    <textarea id="information">Your details here...</textarea>
+                    <br>
+                    <button type="submit">Save</button>
+                </fieldset>
+            </form>
+            <a href="#top">Back to Top</a>
         </main>
         <footer>
             <hr>
