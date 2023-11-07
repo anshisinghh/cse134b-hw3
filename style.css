@@ -180,8 +180,10 @@ nav a:hover {
 }
 .experience {
     padding: 0.5em;
-    background-color: rgb(52, 52, 52);
-    color: white;
+    /* background-color: rgb(52, 52, 52); */
+    /* color: white; */
+    color: black;
+    border: 1px solid black;
     margin: 0.5em;
     margin: 0;
     margin-top: 0.5em;
@@ -195,10 +197,10 @@ nav a:hover {
 .project {
     padding: 0.5em;
     flex: 1;
-    background-color: rgb(52, 52, 52);
+    background-color: black;
     margin: 0.5em;
     border: 1px solid white;
-    color: white;
+    color: rgb(221, 221, 221);
 }
 .project h4 {
     text-align: center;
@@ -238,7 +240,9 @@ nav a:hover {
 }
 .certification {
     padding: 0.5em;
-    background-color: rgb(52, 52, 52);
+    /* background-color: rgb(52, 52, 52); */
     margin: 0.5em;
-    color: white;
+    /* color: white; */
+    color: black;
+    border: 1px solid black;
 }
