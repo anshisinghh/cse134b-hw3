@@ -1,9 +1,15 @@
 @import url(vars.css);
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url();
+}
+
 body {
     background-color : #dad7cd;
 	color : black;
 	font-size : 1.25em;
+    font-family: 'CustomFont', 'Times New Roman', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +19,7 @@ footer {
     background-color: rgb(11, 54, 11); 
     color : #dad7cd;
     padding: 0.5em;
-    /* margin-top: 0; */
+    margin-top: 0;
 }
 footer p {
     margin-left: 2em;
@@ -49,18 +55,18 @@ nav a:hover {
 }
 
 /* About Me */
-#aboutme {
+#about-me-container {
     background-color: black;
     color: rgb(221, 221, 221);
     padding: 0.5em;
 }
-#aboutme h2 {
+#about-me-container h2 {
     margin-left: 30vh;
 }
-#aboutme p {
+#about-me-container p {
     margin-left: 30vh;
 }
-#aboutme img {
+#about-me-container img {
     margin-top: 5vh;
     margin-right: 30vh;
 }
@@ -88,26 +94,26 @@ nav a:hover {
 }
 
 /* Get In Touch */
-#getintouch h2 {
+#get-in-touch-container h2 {
     text-align: center;
 }
-#getintouch form {
+#get-in-touch-container form {
     width: 66%;
     margin: 0 auto;
 }
-#getintouch input, textarea {
+#get-in-touch-container input, textarea {
 	width: 100%;
 	margin-bottom: 1em;
 	padding: 0.5em;
 	border: 1px solid black;
 }
-#getintouch input {
+#get-in-touch-container input {
     height: 2em;
 }
-#getintouch textarea {
+#get-in-touch-container textarea {
 	height: 4em;
 }
-#getintouch button {
+#get-in-touch-container button {
 	width: 10%;
     display: block;
     margin: 0 auto;
@@ -118,8 +124,33 @@ nav a:hover {
 	border: 1px solid black;
     transition: background-color 0.3s ease;
 }
-#getintouch button:hover {
+#get-in-touch-container button:hover {
     background-color: #0056b3;
+}
+
+/* Education */
+.education-container {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+.education-container h2, .education-container h3, .education-container p {
+    margin-left: 380px;
+}
+.education-container h2, .education-container h3 {
+    color: #001e64;
+}
+
+/* Left Aligning Image */
+.left-float {
+    float: left;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 0.5em;
+}
+.left-float img {
+    /* try and make image scalable */
+    max-width: 15em;
+    height: auto;
 }
 
 /* Right Aligning Image */
@@ -134,17 +165,23 @@ nav a:hover {
     max-width: 10em;
     height: auto;
 }
-#contact {
-    clear: both;
+
+/* Experience Headings */
+.experience-headings {
+    text-align: center;
 }
 
 /* Experience */
-.experiences-container {}
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+}
 .experience {
     padding: 0.5em;
-    background-color: black;
+    background-color: rgb(52, 52, 52);
     color: white;
-    /* margin: 0.5em; */
+    margin: 0.5em;
     margin: 0;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -157,22 +194,50 @@ nav a:hover {
 .project {
     padding: 0.5em;
     flex: 1;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(52, 52, 52);
     margin: 0.5em;
     border: 1px solid white;
     color: white;
+}
+.project h4 {
+    text-align: center;
 }
 .center-video {
     display: block;
     margin: 0 auto;
     width: 90%;
 }
+.project-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.project-button {
+    padding: 0.2em;
+    background-color: #5e8b62;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1em;
+    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+.project-button:hover {
+    background-color: #0056b3;
+}
 
 /* Certification */
-.certifications-container {}
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+}
 .certification {
     padding: 0.5em;
-    background-color: black;
+    background-color: rgb(52, 52, 52);
     margin: 0.5em;
     color: white;
 }
