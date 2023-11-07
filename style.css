@@ -197,18 +197,20 @@ nav a:hover {
 #experiences-container {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: rgb(221, 221, 221);
+    /* background-color: black;
+    color: rgb(221, 221, 221); */
 }
 .experience {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 1em;
+    border: 1px solid black;
+    padding: 0.5em;
 }
-#breakline {
+/* #breakline {
     height: 1px; 
     margin: 0;
-}
+} */
 
 /* Certification */
 .certification-heading {
@@ -225,6 +227,8 @@ nav a:hover {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 1em;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 /* Project */
