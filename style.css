@@ -1,5 +1,6 @@
 @import url(vars.css);
 
+/* Fonts */
 @font-face {
     font-family: 'CustomFont';
     src: url();
@@ -152,7 +153,7 @@ nav a:hover {
     color: #001e64;
 }
 
-/* Left Aligning Image */
+/* Aligning Image */
 .left-float {
     float: left;
     margin-left: 2em;
@@ -164,8 +165,6 @@ nav a:hover {
     max-width: 15em;
     height: auto;
 }
-
-/* Right Aligning Image */
 .right-float {
     float: right;
     margin-left: 1em;
@@ -175,6 +174,17 @@ nav a:hover {
 .right-float img {
     /* try and make image scalable */
     max-width: 10em;
+    height: auto;
+}
+.right-float-codepath {
+    float: right;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+.right-float-codepath img {
+    /* try and make image scalable */
+    max-width: 20em;
     height: auto;
 }
 
