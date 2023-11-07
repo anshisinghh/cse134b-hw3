@@ -201,7 +201,10 @@ nav a:hover {
     margin-left: 2em;
     margin-bottom: 1em;
     border: 1px solid white;
-    padding: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     background-color: black;
     color: rgb(221, 221, 221);
 }
@@ -220,8 +223,10 @@ nav a:hover {
     margin-left: 2em;
     margin-bottom: 1em;
     border: 1px solid white;
-    padding: 0.5em;
-    background-color: black;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;    background-color: black;
     color: rgb(221, 221, 221);
 }
 
