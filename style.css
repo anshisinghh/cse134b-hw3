@@ -132,6 +132,7 @@ nav a:hover {
 .education-container {
     padding: 0.5em;
     margin-bottom: 1em;
+    margin-right: 2em;
 }
 .education-container h2, .education-container h3, .education-container p {
     margin-left: 380px;
