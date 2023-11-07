@@ -191,32 +191,24 @@ nav a:hover {
 /* Experience */
 .experience-heading {
     text-align: center;
-    margin: 0;
-    margin-top: 1em
 }
 #experiences-container {
     display: flex;
     flex-direction: column;
-    /* background-color: black;
-    color: rgb(221, 221, 221); */
 }
 .experience {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 1em;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 0.5em;
+    background-color: black;
+    color: rgb(221, 221, 221);
 }
-/* #breakline {
-    height: 1px; 
-    margin: 0;
-} */
 
 /* Certification */
 .certification-heading {
     text-align: center;
-    margin: 0;
-    margin-top: 1em
 }
 #certifications-container {
     display: flex;
@@ -227,8 +219,10 @@ nav a:hover {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 1em;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 0.5em;
+    background-color: black;
+    color: rgb(221, 221, 221);
 }
 
 /* Project */
