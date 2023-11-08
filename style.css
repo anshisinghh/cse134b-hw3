@@ -80,7 +80,7 @@ header {
     align-items: center;
 }
 h1 {
-    font-style: 'EB Garamond', 'Times New Roman', sans-serif;
+    font-style: 'EB Garamond';
     margin-left: 2em;
     margin-right: 2em;
     color: var(--header-footer-text-color, beige, white);
