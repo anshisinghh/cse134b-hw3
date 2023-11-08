@@ -67,6 +67,7 @@ nav a:hover {
     margin-left: 30vh;
 }
 #about-me-container img {
+    /* max-width: 100%; */
     margin-top: 5vh;
     margin-right: 30vh;
 }
@@ -162,6 +163,7 @@ nav a:hover {
 }
 .left-float img {
     /* try and make image scalable */
+    /* max-width: 100%; */
     max-width: 15em;
     height: auto;
 }
@@ -172,6 +174,7 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 .right-float img {
+    /* max-width: 100%; */
     /* try and make image scalable */
     max-width: 10em;
     height: auto;
@@ -183,6 +186,7 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 .right-float-codepath img {
+    /* max-width: 100%; */
     /* try and make image scalable */
     max-width: 20em;
     height: auto;
@@ -255,19 +259,22 @@ nav a:hover {
 }
 .project-buttons {
     display: flex;
-    justify-content: space-around;
-    width: 100%
+    flex: wrap;
+    justify-content: space-evenly;
 }
 .project-button {
-    padding: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 1em;
+    padding-left: 1em;
     background-color: #5e8b62;
     color: #fff;
     text-decoration: none;
     border-radius: 1em;
     transition: background-color 0.3s ease;
     font-size: 1.5em;
-    margin-bottom: 0.1em;
-    margin-top: 0.1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     border: 1px solid white;
     display: flex;
     justify-content: space-around;
