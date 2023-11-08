@@ -10,8 +10,8 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
 }
 
 body {
-    background-color : var(--light-background-color, beige,white);
-	color : var(--dark-text-color, black, gray);
+    background-color : var(--light-background-color, beige);
+	color : var(--dark-text-color, black);
 	font-size : var(--body-size);
     font-family: 'Abhaya Libre', 'Times New Roman', sans-serif;
     margin: 0;
@@ -29,7 +29,7 @@ p, ul, ul li, ol li {
 footer {
     clear: both;
     background-color: var(--dark-background-color, green); 
-    color : var(--header-footer-text-color, beige, white);
+    color : var(--header-footer-text-color, beige);
     padding: 0.5em;
     margin-top: 0;
 }
@@ -56,7 +56,7 @@ footer:has(p) {
 }
 .footeremail {
     text-decoration: none;
-    color: var(--header-footer-text-color, beige, white)
+    color: var(--header-footer-text-color, beige)
 }
 .footeremail:hover {
     text-decoration: underline;
@@ -65,7 +65,7 @@ footer:has(p) {
 /* Header & Navigation Bar */
 header {
     background-color: var(--dark-background-color, green); 
-    color: var(--header-footer-text-color, beige, white); 
+    color: var(--header-footer-text-color, beige); 
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     display: flex;
@@ -73,10 +73,10 @@ header {
     align-items: center;
 }
 h1 {
-    font-style: 'Abhaya Libre', 'Times New Roman', sans-serif;
+    font-family: 'Abhaya Libre', 'Times New Roman', sans-serif;
     margin-left: 2em;
     margin-right: 2em;
-    color: var(--header-footer-text-color, beige, white);
+    color: var(--header-footer-text-color, beige);
     font-size: var(--heading-size);
 }
 nav ul {
@@ -101,7 +101,7 @@ nav a:hover {
 /* About Me */
 #about-me-container {
     background-color: var(--dark-content-background-color, black, gray);
-    color: var(--light-text-color, beige, white);
+    color: var(--light-text-color, beige);
     padding: 0.5em;
 }
 #about-me-container h2 {
@@ -130,26 +130,26 @@ nav a:hover {
 .contact-button {
     padding: 0.5em;
     background-color: var(--light-content-background-color, green);
-    color: var(--button-text-color, white, beige);
+    color: var(--button-text-color, white);
     text-decoration: none;
     border-radius: 10%;
     transition: background-color 0.3s ease;
     font-size: 1.5em;
 }
 #mail:hover {
-    background-color: var(--mail-color, #1ebcff, blue);
+    background-color: var(--mail-color, #1ebcff);
 }
 #phone:hover {
-    background-color: var(--phone-color, #04b309, green);
+    background-color: var(--phone-color, #04b309);
 }
 #linkedin:hover {
     background-color: var(--linkedin-color, darkblue);
 }
 #github:hover {
-    background-color: var(--github-color, rgb(43, 43, 43), gray);
+    background-color: var(--github-color, rgb(43, 43, 43));
 }
 #pdf:hover {
-    background-color: var(--pdf-color, #f40f02, red);
+    background-color: var(--pdf-color, #f40f02);
 }
 
 /* Get In Touch */
@@ -164,7 +164,7 @@ nav a:hover {
 	width: 100%;
 	margin-bottom: 1em;
 	padding: 0.5em;
-	border: 1px solid var(--dark-border-color, black, gray);
+	border: 1px solid var(--dark-border-color, black);
 }
 #get-in-touch-container input {
     height: 3dvh;
@@ -179,8 +179,8 @@ nav a:hover {
     margin-bottom: 1em;
 	height: 2em;
 	background: var(--light-content-background-color, green);
-	color: var(--button-text-color, white, beige);
-	border: 1px solid var(--dark-border-color, black, gray);
+	color: var(--button-text-color, white);
+	border: 1px solid var(--dark-border-color, black);
     transition: background-color 0.3s ease;
 }
 #get-in-touch-container button:hover {
@@ -245,13 +245,13 @@ nav a:hover {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 1em;
-    border: 1px solid var(--light-border-color, white, beige);
+    border: 1px solid var(--light-border-color, white);
     padding-right: 1em;
     padding-left: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     background-color: var(--dark-content-background-color, black, gray);
-    color: var(--light-text-color, beige, white);
+    color: var(--light-text-color, beige);
 }
 
 /* Certification */
@@ -266,13 +266,13 @@ nav a:hover {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 1em;
-    border: 1px solid var(--light-border-color, white, beige);
+    border: 1px solid var(--light-border-color, white);
     padding-right: 1em;
     padding-left: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;    
     background-color: var(--dark-content-background-color, black, gray);
-    color: var(--light-text-color, beige, white);
+    color: var(--light-text-color, beige);
 }
 
 /* Project */
@@ -285,10 +285,10 @@ nav a:hover {
 .project {
     padding: 0.5em;
     flex: 1;
-    background-color: var(--dark-content-background-color, black, gray);;
+    background-color: var(--dark-content-background-color, black);
     margin: 0.5em;
-    border: 1px solid var(--light-border-color, white, beige);
-    color: var(--light-text-color, beige, white);
+    border: 1px solid var(--light-border-color, white);
+    color: var(--light-text-color, beige);
 }
 .project h3 {
     text-align: center;
@@ -309,14 +309,14 @@ nav a:hover {
     padding-right: 1em;
     padding-left: 1em;
     background-color: var(--light-content-background-color, green);
-    color: var(--button-text-color, white, beige);
+    color: var(--button-text-color, white);
     text-decoration: none;
     border-radius: 1em;
     transition: background-color 0.3s ease;
     font-size: 1.5em;
     margin-right: 0.5em;
     margin-left: 0.5em;
-    border: 1px solid var(--light-border-color, white, beige);
+    border: 1px solid var(--light-border-color, white);
     display: flex;
     justify-content: space-around;
 }
@@ -340,9 +340,9 @@ nav a:hover {
 }
 .skills-container ul li {
     display: inline; 
-    border: 1px solid var(--dark-border-color, black, gray);
+    border: 1px solid var(--dark-border-color, black);
     background-color: var(--light-content-background-color, green);
-    color: var(--button-text-color, white, beige);
+    color: var(--button-text-color, white);
     padding: 0.5em;
     text-align: center;
     margin: 0.3em;
