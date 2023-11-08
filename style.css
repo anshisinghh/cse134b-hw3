@@ -2,15 +2,25 @@
 
 /* Fonts */
 @font-face {
-    font-family: 'CustomFont';
-    src: url();
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ebgaramond/v27/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI9_WamXgHlI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/abhayalibre/v14/e3tmeuGtX-Co5MNzeAOqinEQfEnXgPRE4g.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
     background-color : #dad7cd;
 	color : black;
 	font-size : 1.25em;
-    font-family: 'CustomFont', 'Times New Roman', Arial, sans-serif;
+    font-family: 'EB Garamond', 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -22,7 +32,32 @@ footer {
     margin-top: 0;
 }
 footer p {
-    margin-left: 2em;
+    font-size: 1em;
+    text-align: center;
+    line-height: 0;
+}
+.colorfooter {
+    animation: colorChange 10s infinite alternate;
+}
+@keyframes colorChange {
+    50% {
+        color: white;
+    }
+    100% {
+        color: green;
+    }
+}
+.colorfooter::before {
+    content: '\2665'; /* Unicode for the heart symbol */
+    display: inline-block;
+    transform: rotate(45deg); /* Rotate the heart symbol by 45 degrees */
+}
+.footeremail {
+    text-decoration: none;
+    color:rgb(221, 221, 221)
+}
+.footeremail:hover {
+    text-decoration: underline;
 }
 
 /* Header & Navigation Bar */
@@ -36,11 +71,15 @@ header {
     align-items: center;
 }
 h1 {
+    font-style: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin-left: 2em;
+    margin-right: 2em;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 nav ul li {
     display: inline; 
@@ -67,7 +106,6 @@ nav a:hover {
     margin-left: 30vh;
 }
 #about-me-container img {
-    /* max-width: 100%; */
     margin-top: 5vh;
     margin-right: 30vh;
 }
@@ -222,7 +260,6 @@ nav a:hover {
     flex-direction: column;
 }
 .certification {
-    color: black;
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 1em;
@@ -230,7 +267,8 @@ nav a:hover {
     padding-right: 1em;
     padding-left: 1em;
     padding-top: 0.5em;
-    padding-bottom: 0.5em;    background-color: black;
+    padding-bottom: 0.5em;    
+    background-color: black;
     color: rgb(221, 221, 221);
 }
 
@@ -259,8 +297,8 @@ nav a:hover {
 }
 .project-buttons {
     display: flex;
-    flex: wrap;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .project-button {
     padding-top: 0.2em;
