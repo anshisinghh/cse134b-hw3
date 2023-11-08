@@ -201,7 +201,7 @@ nav a:hover {
     margin-right: 2em;
 }
 .education-container h2, .education-container h3, .education-container p {
-    margin-left: 380px;
+    margin-left: 2em;
 }
 .course-specs {
     display: flex;
