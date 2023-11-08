@@ -125,16 +125,14 @@ nav a:hover {
 }
 
 /* Contact */
-#about-me-container ul {
-    list-style: none;
-    margin-bottom: 1em;
-}
 .contact-buttons {
     display: flex;
     justify-content: space-around;
     margin-top: 2em;
     margin-left: 30vh;
     margin-right: 30vh;
+    list-style: none;
+    padding: 1em;
 }
 .contact-button {
     padding: 0.5em;
