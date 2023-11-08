@@ -39,7 +39,7 @@ footer:has(p) {
     text-align: center;
     line-height: 0;
 }
-/* Instead of :has() above, you can also do this. */
+/* Instead of :has() above, you can also do this to not get a validation error/ works on browsers that do not yet support :has(). */
 footer p {
     font-size: var(--footer-size);
     text-align: center;
