@@ -13,7 +13,7 @@ body {
     background-color : var(--light-background-color, beige);
 	color : var(--dark-text-color, black);
 	font-size : var(--body-size);
-    font-family: 'Abhaya Libre', 'Times New Roman', sans-serif;
+    font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -33,7 +33,14 @@ footer {
     padding: 0.5em;
     margin-top: 0;
 }
-footer:has(p) {
+/* Parse Error occurs because CSS does not currently support complex selectors like :has() */
+footer:has(p) { 
+    font-size: var(--footer-size);
+    text-align: center;
+    line-height: 0;
+}
+/* Instead of :has() above, you can also do this. */
+footer p {
     font-size: var(--footer-size);
     text-align: center;
     line-height: 0;
@@ -73,7 +80,6 @@ header {
     align-items: center;
 }
 h1 {
-    font-family: 'Abhaya Libre', 'Times New Roman', sans-serif;
     margin-left: 2em;
     margin-right: 2em;
     color: var(--header-footer-text-color, beige);
@@ -182,6 +188,7 @@ nav a:hover {
 	color: var(--button-text-color, white);
 	border: 1px solid var(--dark-border-color, black);
     transition: background-color 0.3s ease;
+    font-size: 0.75em;
 }
 #get-in-touch-container button:hover {
     background-color: var(--dark-background-color);
