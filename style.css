@@ -56,7 +56,7 @@ footer:has(p) {
         color: green;
     }
 }
-.color-footer::before {
+.heart-image::before {
     content: '\2665';
     display: inline-block;
     transform: rotate(45deg);
@@ -201,9 +201,6 @@ nav a:hover {
 }
 .education-container h2, .education-container h3, .education-container p {
     margin-left: 380px;
-}
-.education-container h2, .education-container h3 {
-    color: var(--education-text-color, darkblue);
 }
 .course-specs {
     display: flex;
