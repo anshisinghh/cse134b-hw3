@@ -218,7 +218,7 @@ nav a:hover {
 .left-float img {
     float: left;
     max-width: 15em;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
 }
 .right-float {
@@ -229,7 +229,7 @@ nav a:hover {
 }
 .right-float img {
     max-width: 10em;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
 }
 .right-float-headshot {
@@ -239,7 +239,7 @@ nav a:hover {
 }
 .right-float-headshot img {
     max-width: 10em;
-    width: 15%;
+    /* width: 15%; */
     height: auto;
     float: right;
     margin-left: 1em;
