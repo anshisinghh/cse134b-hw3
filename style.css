@@ -201,7 +201,10 @@ nav a:hover {
     margin-right: 2em;
 }
 .education-container h2, .education-container h3, .education-container p {
-    margin-left: 2em;
+    margin-left: 280px;
+}
+.education-container img[src="UCSD-Seal.png"] h2, .education-container img[src="UCSD-Seal.png"] + h3, .education-container img[src="UCSD-Seal.png"] + p {
+    margin-left: 380px;
 }
 .course-specs {
     display: flex;
@@ -213,12 +216,12 @@ nav a:hover {
     margin-top: 1.5em;
     margin-left: 2em;
     margin-right: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 5%;
+    clear: left;
 }
 .left-float img {
     float: left;
     max-width: 15em;
-    /* width: 100%; */
     height: auto;
 }
 .right-float {
