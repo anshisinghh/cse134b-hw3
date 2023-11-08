@@ -20,7 +20,7 @@ body {
     background-color : var(--light-background-color, beige,white);
 	color : var(--dark-text-color, black, gray);
 	font-size : var(--body-size);
-    font-family: 'EB Garamond', 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
+    font-family: 'EB Garamond', 'Abhaya Libre', 'Times New Roman', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -80,7 +80,7 @@ header {
     align-items: center;
 }
 h1 {
-    font-style: 'Abhaya Libre', 'EB Garamond', 'Times New Roman', Arial, sans-serif;
+    font-style: 'Abhaya Libre', 'EB Garamond', 'Times New Roman', sans-serif;
     margin-left: 2em;
     margin-right: 2em;
     color: var(--header-footer-text-color, beige, white);
@@ -125,6 +125,10 @@ nav a:hover {
 }
 
 /* Contact */
+#about-me-container ul {
+    list-style: none;
+    margin-bottom: 1em;
+}
 .contact-buttons {
     display: flex;
     justify-content: space-around;
