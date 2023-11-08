@@ -45,7 +45,7 @@ footer p {
     text-align: center;
     line-height: 0;
 }
-.color-footer {
+.footer-design {
     animation: colorChange 8s infinite alternate;
 }
 @keyframes colorChange {
@@ -56,7 +56,7 @@ footer p {
         color: green;
     }
 }
-.heart-image::before {
+.footer-design::before {
     content: '\2665';
     display: inline-block;
     transform: rotate(45deg);
@@ -216,7 +216,9 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 .left-float img {
+    float: left;
     max-width: 15em;
+    width: 100%;
     height: auto;
 }
 .right-float {
@@ -227,7 +229,20 @@ nav a:hover {
 }
 .right-float img {
     max-width: 10em;
+    width: 100%;
     height: auto;
+}
+.right-float-headshot {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+.right-float-headshot img {
+    max-width: 10em;
+    width: 15%;
+    height: auto;
+    float: right;
+    margin-left: 1em;
 }
 .right-float-codepath {
     float: right;
@@ -237,7 +252,9 @@ nav a:hover {
 }
 .right-float-codepath img {
     max-width: 20em;
+    width: 100%;
     height: auto;
+    float: right;
 }
 
 /* Experience */
